@@ -1,0 +1,17 @@
+.box-3{
+  .box-content{
+    padding-bottom: 0 !important;
+  }
+  .col{
+    width:25%;
+  }
+  .image-col{
+    width:50%;
+    img{
+      margin: 0 0 0 auto;
+    }
+  }
+  .text-col{
+    padding-top: 30px;
+  }
+}

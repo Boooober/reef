@@ -1,0 +1,48 @@
+.box-3{
+  .box-content{
+    padding-bottom: 0;
+  }
+
+  .image-col{
+    width:50%;
+    vertical-align: bottom;
+    img{
+      margin: 0 0 0 auto;
+    }
+  }
+  .text-wrapper{
+    width: 50%;
+    vertical-align: top;
+    .text-col{
+      width:50%;
+      vertical-align: top;
+    }
+  }
+
+
+  @media(max-width: 1280px){
+    .image-col{
+      width: 40%;
+    }
+    .text-wrapper{
+      width:60%;
+    }
+  }
+
+  @media(max-width: 1100px){
+    .line-row{
+      margin: 0 -20px;
+    }
+    .line-col{
+      padding: 0 20px;
+    }
+  }
+
+  @media(max-width: 992px){
+    .text-wrapper{
+      .line-col{
+        width: 100%;
+      }
+    }
+  }
+}

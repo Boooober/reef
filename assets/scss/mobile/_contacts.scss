@@ -1,0 +1,49 @@
+.contacts-tile{
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -175px;
+  padding: 50px 50px 0;
+  width: 350px;
+//  transition: transform 1s cubic-bezier(0.320, -0.190, 0.380, 0.550);
+  h1{
+    margin: 0;
+  }
+//  svg{
+//    width: 55px;
+//  }
+
+//  .fenti {
+//    width: 100%;
+//    padding-left: 0;
+//  }
+}
+
+.contacts-info{
+  margin-top: 30px;
+  p{
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
+}
+
+//.contacts-toggle{
+//  top: 30px;
+//  right:30px;
+//  padding: 5px;
+//  position:absolute;
+//  display:inline-block;
+//  background-color: white;
+//  border-top-right-radius: 35%;
+//  border-bottom-right-radius: 35%;
+//  transition: all 1s linear;
+//}
+
+//
+//.contacts-hidden{
+//  transform:translateX(-510px);
+//  .contacts-toggle{
+//    right: -30px;
+//  }
+//}

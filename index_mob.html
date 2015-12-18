@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--<link rel="stylesheet" href="assets/css/style.mob.min.css" type="text/css" />-->
+    <link rel="stylesheet" href="http://reef.dev.witty-digital.com/wp-content/themes/reef/assets/css/style.mob.min.css" type="text/css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<header>
+    <div class="topline">
+        <div class="topline-wrapper clearfix">
+            <ul id="lang-menu" class="lang-menu">
+                <li><a href="#en">EN</a></li>
+                <li class="current-lang"><a href="#ru">RU</a></li>
+                <li><a href="#fr">FR</a></li>
+            </ul>
+            <div class="menu-btn"></div>
+            <figure class="logo">
+                <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 220 62" enable-background="new 0 0 220 62" xml:space="preserve">
+                    <polygon points="67.562,1 65.882,1 65.882,2.681 65.882,17.583 65.882,19.259 65.882,34.157 65.882,35.839
+                        84.317,35.839 84.317,34.157 67.562,34.157 67.562,19.259 80.958,19.259 80.958,17.583 67.562,17.583 67.562,2.681 84.317,2.681
+                        84.317,1 "/>
+                    <polygon points="132.441,1 130.766,1 130.766,2.681 130.766,17.583 130.766,19.259 130.766,34.157 130.766,35.839
+                        149.193,35.839 149.193,34.157 132.441,34.157 132.441,19.259 145.838,19.259 145.838,17.583 132.441,17.583 132.441,2.681
+                        149.193,2.681 149.193,1 "/>
+                    <polygon points="214.078,2.682 214.078,1.001 197.333,1.001 195.646,1.001 195.646,2.682 195.646,17.582
+                        195.646,19.26 195.646,35.839 197.333,35.839 197.333,19.26 210.722,19.26 210.722,17.582 197.333,17.582 197.333,2.682 "/>
+                    <path d="M19.433,10.132C19.433,5.089,15.346,1,10.305,1H3.189H2.677H1v1.682v14.9v1.678v16.58h1.677V19.26h7.345
+                        l7.731,16.58h1.679l-7.774-16.678C16.056,18.508,19.433,14.713,19.433,10.132 M10.91,17.553c-0.204,0.015-0.404,0.029-0.605,0.029
+                        H9.238H2.677v-14.9H3.97h6.335c4.114,0,7.449,3.334,7.449,7.451C17.753,14.04,14.738,17.245,10.91,17.553"/>
+                    <path d="M2.67,54.742c-0.778,0-1.226,0.601-1.226,1.423c0,0.706,0.218,0.998,1.349,1.499
+                        c1.158,0.513,1.575,0.752,1.575,1.812c0,1.093-0.662,1.741-1.725,1.741C1.574,61.217,1,60.486,1,59.424h0.31
+                        c0,0.353,0.096,0.76,0.291,1.024c0.223,0.342,0.591,0.511,1.035,0.511c0.838,0,1.412-0.602,1.412-1.465
+                        c0-0.48-0.168-0.856-0.484-1.098c-0.186-0.165-1.74-0.792-2.041-1.119c-0.256-0.275-0.381-0.62-0.381-1.086
+                        c0-1.069,0.558-1.706,1.539-1.706c0.945,0,1.5,0.627,1.5,1.511H3.898C3.898,55.315,3.449,54.742,2.67,54.742"/>
+                    <polygon points="16.322,61.058 13.626,61.058 13.626,54.642 16.276,54.642 16.276,54.899 13.927,54.899
+                        13.927,57.567 16.065,57.567 16.065,57.825 13.927,57.825 13.927,60.804 16.322,60.804 "/>
+                    <path d="M26.809,54.642h0.371l1.706,6.416h-0.308l-0.505-2.059h-2.137l-0.522,2.059h-0.282L26.809,54.642z
+                         M25.988,58.75h2.033l-1.025-3.92L25.988,58.75z"/>
+                    <polygon fill="#2B2523" points="48.326,61.058 48.028,61.058 48.028,54.642 50.722,54.642 50.722,54.899 48.326,54.899
+                        48.326,57.567 50.466,57.567 50.466,57.825 48.326,57.825 "/>
+                    <path d="M60.39,60.625c-0.345-0.502-0.521-1.413-0.521-2.785c0-1.307,0.176-2.188,0.513-2.717
+                        c0.291-0.436,0.679-0.638,1.244-0.638c0.75,0,1.219,0.337,1.487,1.072c0.184,0.484,0.28,1.251,0.28,2.284
+                        c0,0.711-0.037,1.239-0.096,1.643c-0.11,0.55-0.257,0.958-0.496,1.24c-0.274,0.335-0.664,0.493-1.175,0.493
+                        C61.061,61.216,60.673,61.032,60.39,60.625 M62.856,59.979c0.155-0.458,0.229-1.174,0.229-2.139c0-0.89-0.074-1.572-0.213-2.02
+                        c-0.213-0.697-0.655-1.078-1.246-1.078s-1.016,0.363-1.229,1.031c-0.15,0.444-0.219,1.141-0.219,2.067
+                        c0,1.192,0.131,2.051,0.388,2.501c0.229,0.399,0.61,0.619,1.061,0.619C62.217,60.96,62.644,60.625,62.856,59.979"/>
+                    <path d="M73.281,60.625c-0.345-0.502-0.522-1.413-0.522-2.785c0-1.307,0.177-2.188,0.515-2.717
+                        c0.29-0.436,0.678-0.638,1.244-0.638c0.752,0,1.219,0.337,1.486,1.072c0.184,0.484,0.279,1.251,0.279,2.284
+                        c0,0.711-0.034,1.239-0.095,1.643c-0.107,0.55-0.257,0.958-0.496,1.24c-0.272,0.335-0.664,0.493-1.175,0.493
+                        C73.952,61.216,73.564,61.032,73.281,60.625 M75.747,59.979c0.159-0.458,0.229-1.174,0.229-2.139c0-0.89-0.07-1.572-0.211-2.02
+                        c-0.212-0.697-0.656-1.078-1.247-1.078c-0.59,0-1.013,0.363-1.227,1.031c-0.149,0.444-0.223,1.141-0.223,2.067
+                        c0,1.192,0.131,2.051,0.389,2.501c0.232,0.399,0.61,0.619,1.061,0.619C75.108,60.96,75.535,60.625,75.747,59.979"/>
+                    <path d="M85.774,61.058v-6.416h1.02c0.562,0,0.962,0.055,1.219,0.162c0.217,0.078,0.422,0.23,0.58,0.429
+                        c0.375,0.452,0.591,1.41,0.591,2.107v0.301c0,0.918-0.033,1.571-0.234,2.137c-0.181,0.529-0.426,0.865-0.764,1.05
+                        c-0.283,0.149-0.687,0.231-1.28,0.231H85.774z M86.086,60.804h0.907c0.399,0,0.645-0.029,0.91-0.154
+                        c0.399-0.202,0.69-0.645,0.84-1.288c0.088-0.399,0.133-0.903,0.133-1.522c0-0.677-0.026-1.183-0.087-1.492
+                        c-0.122-0.602-0.398-1.049-0.805-1.28c-0.228-0.125-0.617-0.168-0.991-0.168h-0.907V60.804z"/>
+                    <path d="M112.034,59.054c0,0.562-0.14,1.085-0.405,1.5c-0.292,0.45-0.688,0.663-1.283,0.663
+                        c-0.5,0-0.874-0.159-1.138-0.486c-0.227-0.283-0.376-0.697-0.477-1.281c-0.081-0.451-0.112-1.025-0.112-1.786
+                        c0-0.926,0.104-1.624,0.288-2.119c0.278-0.723,0.734-1.059,1.461-1.059c0.52,0,0.901,0.175,1.203,0.563
+                        c0.271,0.361,0.42,0.815,0.42,1.255h-0.317c0-0.326-0.095-0.715-0.292-1.013c-0.228-0.356-0.609-0.549-1.035-0.549
+                        c-0.427,0-0.802,0.228-1.029,0.644c-0.257,0.478-0.389,1.301-0.389,2.41c0,1.203,0.132,2.069,0.396,2.527
+                        c0.236,0.408,0.618,0.637,1.086,0.637c0.47,0,0.852-0.244,1.066-0.714c0.162-0.344,0.25-0.807,0.25-1.192H112.034z"/>
+                    <path d="M121.986,60.625c-0.345-0.502-0.521-1.413-0.521-2.785c0-1.307,0.176-2.188,0.508-2.717
+                        c0.293-0.436,0.683-0.638,1.248-0.638c0.749,0,1.218,0.337,1.482,1.072c0.189,0.484,0.285,1.251,0.285,2.284
+                        c0,0.711-0.035,1.239-0.096,1.643c-0.108,0.55-0.257,0.958-0.498,1.24c-0.273,0.335-0.661,0.493-1.174,0.493
+                        C122.656,61.216,122.267,61.032,121.986,60.625 M124.447,59.979c0.162-0.458,0.233-1.174,0.233-2.139c0-0.89-0.072-1.572-0.213-2.02
+                        c-0.211-0.697-0.653-1.078-1.246-1.078c-0.589,0-1.015,0.363-1.228,1.031c-0.153,0.444-0.22,1.141-0.22,2.067
+                        c0,1.192,0.132,2.051,0.389,2.501c0.229,0.399,0.608,0.619,1.059,0.619C123.814,60.96,124.234,60.625,124.447,59.979"/>
+                    <polygon points="134.701,55.112 134.797,56.253 134.797,61.058 134.495,61.058 134.495,54.642 134.805,54.642
+                        136.837,60.716 138.863,54.642 139.171,54.642 139.171,61.058 138.87,61.058 138.87,56.253 138.966,55.112 136.97,61.058
+                        136.697,61.058 "/>
+                    <polygon points="149.022,55.112 149.118,56.253 149.118,61.058 148.817,61.058 148.817,54.642 149.127,54.642
+                        151.16,60.716 153.185,54.642 153.493,54.642 153.493,61.058 153.192,61.058 153.192,56.253 153.289,55.112 151.292,61.058
+                        151.019,61.058 "/>
+                    <path d="M163.118,54.642h0.322v4.73c0,0.511,0.081,0.924,0.25,1.146c0.192,0.293,0.56,0.452,1.042,0.452
+                        c0.484,0,0.874-0.166,1.086-0.485c0.169-0.256,0.257-0.664,0.257-1.174v-4.669h0.316v4.518c0,0.698-0.116,1.191-0.336,1.519
+                        c-0.266,0.369-0.677,0.556-1.308,0.556c-1.158,0-1.628-0.576-1.628-1.803V54.642z"/>
+                    <polygon points="176.279,54.642 179.09,60.632 179.046,59.857 179.046,54.642 179.343,54.642 179.343,61.058
+                        179.017,61.058 176.213,55.067 176.257,55.846 176.257,61.058 175.952,61.058 175.952,54.642 "/>
+                    <rect x="188.972" y="54.642" fill="#2B2523" width="0.308" height="6.416"/>
+                    <polygon points="199.972,54.899 198.514,54.899 198.514,54.642 201.729,54.642 201.729,54.899 200.276,54.899
+                        200.276,61.058 199.972,61.058 "/>
+                    <polygon points="212.28,58.009 213.763,54.642 214.081,54.642 212.44,58.331 212.44,61.058 212.128,61.058
+                        212.128,58.331 210.502,54.642 210.849,54.642 "/>
+                    <path d="M39.117,58.301c0,0.249-0.199,0.448-0.445,0.448c-0.248,0-0.447-0.199-0.447-0.448
+                        c0-0.245,0.199-0.448,0.447-0.448C38.917,57.853,39.117,58.056,39.117,58.301"/>
+                    <path d="M99.667,58.301c0,0.249-0.202,0.448-0.448,0.448c-0.246,0-0.45-0.199-0.45-0.448
+                        c0-0.245,0.205-0.448,0.45-0.448C99.465,57.853,99.667,58.056,99.667,58.301"/>
+                    </svg>
+            </figure>
+
+
+        </div>
+
+        <figure class="topline-video">
+            <img src="head_img.jpg" alt=""/>
+        </figure>
+    </div>
+</header>
+<section id="about-us" class="box box-1">
+
+    <div class="box-content">
+        <div class="brand-text">
+            <h1>Концепция</h1>
+            <ul id="fenti" class="fenti">
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.979" y1="30.437" x2="52.994" y2="23.421"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.928" y1="53.487" x2="29.944" y2="46.472"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.979" y1="46.473" x2="52.995" y2="53.488"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.935" y1="23.428" x2="29.943" y2="30.436"/>
+<path fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M37.961,59.715c-11.742,0-21.26-9.52-21.26-21.259c0-11.743,9.518-21.262,21.26-21.262s21.26,9.519,21.26,21.262
+	C59.221,50.195,49.703,59.715,37.961,59.715z"/>
+<circle fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="37.961" cy="38.454" r="11.339"/>
+</svg>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.085" y1="37.64" x2="72.954" y2="37.64"/>
+<circle fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="37.519" cy="37.64" r="21.26"/>
+</svg>
+
+
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<path fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M58.339,37.641c0,11.739-9.518,21.259-21.26,21.259c-11.742,0-21.26-9.52-21.26-21.259c0-11.743,9.518-21.262,21.26-21.262
+	C48.821,16.379,58.339,25.898,58.339,37.641"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.079" y1="16.38" x2="37.079" y2="2.206"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.079" y1="73.074" x2="37.079" y2="58.9"/>
+</svg>
+
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<path fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M37.638,58.9c-11.742,0-21.26-9.52-21.26-21.259c0-11.743,9.518-21.262,21.26-21.262c11.742,0,21.26,9.519,21.26,21.262
+	C58.898,49.38,49.38,58.9,37.638,58.9z"/>
+<circle fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="37.638" cy="37.64" r="7.087"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.638" y1="30.553" x2="37.638" y2="2.206"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.638" y1="73.074" x2="37.638" y2="44.726"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="44.726" y1="37.64" x2="73.072" y2="37.64"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.204" y1="37.64" x2="30.552" y2="37.64"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="42.649" y1="32.629" x2="62.693" y2="12.585"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.582" y1="62.695" x2="32.627" y2="42.651"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="42.649" y1="42.652" x2="62.693" y2="62.695"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.582" y1="12.585" x2="32.627" y2="32.63"/>
+</svg>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <div class="entry-content">
+            <p>Добро пожаловать в REEF sea.food.community — первый в Украине ресторан настоящего современного рыбного искусства. Общую атмосферу заведения создают детали — открытая кухня, RAW-бар со свежей рыбой, тщательно подобранная винная карта. Концепция REEF sea.food.community не предусматривает заморозки рыбы — поставки морепродуктов будут производиться раз в неделю с южного и северного побережья Атлантики.</p>
+            <p class="show-more-target">А роскошное меню, разработанное шеф-поваром Александром Yourz совместно с мишленовским бренд-шефом Nicola Batavia, не оставит равнодушными даже самых прихотливых гурманов. Мы дарим вам возможность наслаждаться рыбными блюдами наивысшего качества и морепродуктами из разных уголков мира. REEF. Лучший рыбный ресторан Украины. Лучший по впечатлениям. Лучший по еде.</p>
+            <span class="load-more">Подробнее</span>
+        </div>
+    </div>
+</section>
+
+<section id="menu" class="box box-2 full-background">
+<div class="box-content slider-wrapper">
+<h1>Меню</h1>
+</div>
+</section>
+
+<section id="chief" class="box box-3">
+    <div class="box-content">
+        <h1>Chief</h1>
+        <div class="entry-content">
+            <p>Сердце нашего ресторана – это его кухня – место, где лучшие ингредиенты золотыми руками шеф-повара превращаются в изысканные блюда.</p>
+            <p>Кухней в REEF sea.food.community руководит молодой и талантливый Alexander Yourz. Cвою профессиональную карьеру начал в 19 лет.</p>
+        </div>
+        <figure>
+            <!--<img src="assets/images/chief_reef.jpg" alt=""/> &lt;!&ndash;Chief photo&ndash;&gt;-->
+            <img src="http://reef.dev.witty-digital.com/wp-content/themes/reef/assets/images/chief_reef.jpg" alt=""/> <!--Chief photo-->
+        </figure>
+    </div>
+</section>
+
+<section class="box box-4">
+    <div class="box-content">
+        <h1>Новости</h1>
+
+        <div class="line clearfix">
+            <figure class="col-img">
+                <img src="dishes_01.png" alt=""/>
+            </figure>
+            <div class="entry-content">
+                <h2>Notre histoire</h2>
+                <p>Crée par Jean Minchelli à la fin des années 60, homme de la mer et ami du Tout Paris en vogue, Le Duc fait partie de la Nouvelle Vague culinaire qui va déferler sur l’Hexagone: rompant avec les dogmes de la cuisine traditionnelle et bourgeoise, le restaurant ose la simplicité.</p>
+            </div>
+        </div>
+        <div class="line clearfix">
+            <figure class="col-img">
+                <img src="dishes_02.png" alt=""/>
+            </figure>
+            <div class="entry-content">
+                <h2>Notre histoire</h2>
+                <p>Crée par Jean Minchelli à la fin des années 60, homme de la mer et ami du Tout Paris en vogue, Le Duc fait partie de la Nouvelle Vague culinaire qui va déferler sur l’Hexagone: rompant avec les dogmes de la cuisine traditionnelle et bourgeoise, le restaurant ose la simplicité.</p>
+            </div>
+        </div>
+        <div class="line clearfix">
+            <figure class="col-img">
+                <img src="dishes_03.png" alt=""/>
+            </figure>
+            <div class="entry-content">
+                <h2>Notre histoire</h2>
+                <p>Crée par Jean Minchelli à la fin des années 60, homme de la mer et ami du Tout Paris en vogue, Le Duc fait partie de la Nouvelle Vague culinaire qui va déferler sur l’Hexagone: rompant avec les dogmes de la cuisine traditionnelle et bourgeoise, le restaurant ose la simplicité.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contacts" class="box box-5">
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d81369.32524602328!2d30.532347227246095!3d50.40772481029529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1448456357255" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="contacts contacts-opened">
+        <!--<div id="contacts-toggle" class="icon-cancel contacts-toggle trigger">close</div>-->
+        <div class="brand-text">
+            <h1>Адрес</h1>
+            <ul id="fenti" class="fenti">
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.979" y1="30.437" x2="52.994" y2="23.421"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.928" y1="53.487" x2="29.944" y2="46.472"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.979" y1="46.473" x2="52.995" y2="53.488"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.935" y1="23.428" x2="29.943" y2="30.436"/>
+<path fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M37.961,59.715c-11.742,0-21.26-9.52-21.26-21.259c0-11.743,9.518-21.262,21.26-21.262s21.26,9.519,21.26,21.262
+	C59.221,50.195,49.703,59.715,37.961,59.715z"/>
+<circle fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="37.961" cy="38.454" r="11.339"/>
+</svg>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.085" y1="37.64" x2="72.954" y2="37.64"/>
+<circle fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="37.519" cy="37.64" r="21.26"/>
+</svg>
+
+
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<path fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M58.339,37.641c0,11.739-9.518,21.259-21.26,21.259c-11.742,0-21.26-9.52-21.26-21.259c0-11.743,9.518-21.262,21.26-21.262
+	C48.821,16.379,58.339,25.898,58.339,37.641"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.079" y1="16.38" x2="37.079" y2="2.206"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.079" y1="73.074" x2="37.079" y2="58.9"/>
+</svg>
+
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<path fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M37.638,58.9c-11.742,0-21.26-9.52-21.26-21.259c0-11.743,9.518-21.262,21.26-21.262c11.742,0,21.26,9.519,21.26,21.262
+	C58.898,49.38,49.38,58.9,37.638,58.9z"/>
+<circle fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="37.638" cy="37.64" r="7.087"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.638" y1="30.553" x2="37.638" y2="2.206"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.638" y1="73.074" x2="37.638" y2="44.726"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="44.726" y1="37.64" x2="73.072" y2="37.64"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.204" y1="37.64" x2="30.552" y2="37.64"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="42.649" y1="32.629" x2="62.693" y2="12.585"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.582" y1="62.695" x2="32.627" y2="42.651"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="42.649" y1="42.652" x2="62.693" y2="62.695"/>
+<line fill="none" stroke="#5D5D5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.582" y1="12.585" x2="32.627" y2="32.63"/>
+</svg>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts-info">
+            <p>Réservation par téléphone au :<br />
+                01 43 20 96 30<br />
+                ou 01 43 22 59 59
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!--<script type="text/javascript" src="assets/js/jquery.backgroundvideo.min.js"></script>-->
+
+
+
+<!--<script type="text/javascript" src="assets/js/owl.carousel/owl.carousel.min.js"></script>-->
+<script type="text/javascript" src="main.mob.js"></script>
+
+</body>
+</html>

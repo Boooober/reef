@@ -1,0 +1,30 @@
+.box-1{
+  h1{
+    margin-bottom: 0;
+  }
+  .entry-content{
+    margin: 30px 0 0;
+    .show-more-target{
+      display: none;
+    }
+  }
+  .load-more {
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-family: 'HeliosCondC';
+    margin: 30px 0 0;
+    color: #2d2d2d;
+    &:before{
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 2px;
+      margin-right: 10px;
+      background-color: gray;
+    }
+  }
+}

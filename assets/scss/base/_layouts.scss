@@ -1,0 +1,23 @@
+.container{
+  position: relative;
+  overflow: hidden;
+}
+.row{
+  margin: 0 -40px;
+}
+.col{
+  float:left;
+  padding: 0 40px;
+}
+
+.line-row{
+  font-size: 0;
+  margin: 0 -40px;
+
+  &>.line-col{
+    display:inline-block;
+    font-size: $font-size;
+    padding: 0 40px;
+  }
+}
+

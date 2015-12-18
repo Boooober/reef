@@ -1,0 +1,36 @@
+.box-4{
+  .line{
+    margin-bottom: 40px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .col-img{
+    float: left;
+    width: 30%;
+  }
+  .entry-content{
+    margin-left: 30%;
+    padding-left: 50px;
+    h2{
+      font-size: 26px;
+      line-height: 32px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .full-content{
+      display:none;
+    }
+    .load-more{
+      text-transform: uppercase;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      letter-spacing: .1em;
+      font-family: 'HeliosCondC';
+      margin: 10px 0 0;
+      color: #2d2d2d;
+    }
+  }
+}

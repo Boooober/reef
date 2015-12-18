@@ -1,0 +1,41 @@
+#copy-witty{
+  background-color: #1d1d1d;
+  padding: 0 40px;
+  color: #696969;
+  font-family: 'Helvetica', sans-serif;
+}
+#copy-witty:before, #copy-witty:after {
+  content:'';
+  display:table;
+}
+#copy-witty:after {
+  clear: both;
+}
+
+#copy-witty > div {
+  float:right;
+}
+
+#copy-witty span, #copy-witty figure, #copy-witty b {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#copy-witty span{
+  font-size: 12px;
+}
+
+#copy-witty figure{
+  margin: 0 4px;
+}
+
+#copy-witty b{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+#copy-witty svg{
+  width: 30px;
+  height: 30px;
+}
+

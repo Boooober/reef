@@ -1,0 +1,34 @@
+.box-1{
+  h1{
+    margin: 0;
+  }
+  .row{
+    margin:0 -20px;
+  }
+  .col{
+    padding:0 20px;
+  }
+
+  .left{
+    width: 380px;
+  }
+  .right{
+    margin-left:380px;
+    float:none;
+    .col {
+      width:50%;
+    }
+  }
+
+  .col-content{
+    margin-left: 25px;
+  }
+
+  @media (max-width:940px){
+    .right .col {
+      width:100%;
+    }
+  }
+}
+
+

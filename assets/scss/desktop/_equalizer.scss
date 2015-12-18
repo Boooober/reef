@@ -1,0 +1,173 @@
+$max: 20px;
+$width: $max / 5;
+$margin: $max / 10;
+$color: white;
+
+$equalizers: 6;
+$equalizerSize: ($equalizers * $width) + ( ($equalizers - 1) * $margin );
+
+// Heights
+$one: 3;
+$two: $max / 2;
+$three: $max / 4.666666667;
+$four: $max / 3.5;
+$five: $max / 2.8;
+$six: $max / 2.333333333;
+$seven: $max / 2;
+$eight: $max / 1.75;
+$nine: $max / 1.555555556;
+$ten: $max / 1.4;
+$eleven: $max / 1.272727273;
+$twelve: $max / 1.166666667;
+$thirteen: $max / 1.076923077;
+$fourteen: $max;
+
+.equalizer-container {
+  width: $equalizerSize;
+  margin: 0 auto;
+  span{
+    display:inline-block;
+    vertical-align: bottom;
+    width: $width;
+    background-color: $color;
+    height: $two;
+    margin-right: $margin;
+    transition: .5s;
+
+    .music-play &{
+      animation: equalize 1.25s infinite;
+
+      $item: 1;
+      $delay: 100;
+      @while $item <= $equalizers{
+        &:nth-child( #{$item} ) {
+          animation-delay: random($delay)/100+s;
+        }
+        $item: $item + 1;
+      }
+    }
+
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    .music-pause &{
+      height: 3px;
+    }
+
+
+
+  }
+}
+
+
+.equalizer{
+  width: 65px;
+  height: 65px;
+  position: fixed;
+  z-index: 999;
+  bottom: 40px;
+  left: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 10px rgba(0,0,0,.25);
+  display: table;
+  transition: .4s;
+  opacity: 0.2;
+  &:hover{
+    opacity: 0.5;
+  }
+  .equalizer-cell{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &.not-loaded{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+@keyframes equalize {
+  0% {
+    height: $one;
+  }
+  4% {
+    height: $two;
+  }
+  8% {
+    height: $four;
+  }
+  12% {
+    height: $seven;
+  }
+  16% {
+    height: $ten;
+  }
+  20% {
+    height: $thirteen;
+  }
+  24% {
+    height: $twelve;
+  }
+  28% {
+    height: $eleven;
+  }
+  32% {
+    height: $eleven;
+  }
+  36% {
+    height: $eight;
+  }
+  40% {
+    height: $ten;
+  }
+  44% {
+    height: $ten;
+  }
+  48% {
+    height: $eleven;
+  }
+  52% {
+    height: $twelve;
+  }
+  56% {
+    height: $thirteen;
+  }
+  60% {
+    height: $twelve;
+  }
+  64% {
+    height: $twelve;
+  }
+  68% {
+    height: $eleven;
+  }
+  72% {
+    height: $ten;
+  }
+  76% {
+    height: $eleven;
+  }
+  80% {
+    height: $twelve;
+  }
+  84% {
+    height: $twelve;
+  }
+  88% {
+    height: $thirteen;
+  }
+  92% {
+    height: $ten;
+  }
+  96% {
+    height: $seven;
+  }
+  100% {
+    height: $four;
+  }
+}

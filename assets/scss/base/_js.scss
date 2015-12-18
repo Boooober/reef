@@ -1,0 +1,27 @@
+.go-up{
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  bottom: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+  cursor: pointer;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+    transform: rotate(45deg) translate(-50%);
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
