@@ -4,8 +4,6 @@
 
 <header>
     <div class="topline fixed-header">
-
-
         <div class="topline-wrapper nav-down clearfix">
             <?php
             wp_nav_menu( array(
@@ -15,14 +13,18 @@
                 'theme_location' => 'langs',
             ) );
             ?>
-            <div id="reserve" class="menu-btn"></div>
+            <div class="menu-btn reserve">
+                <svg height="100%" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+                </svg>
+            </div>
 
             <?php get_template_part('parts/logo'); ?>
         </div>
 
 
         <div class="topline-video">
-            <?php putRevSlider( 'InteriorSlider' ); ?>
+            <?php putRevSlider( 'MobileSlider' ); ?>
         </div>
 
     </div>
@@ -68,8 +70,6 @@
 <section id="menu" class="box box-2">
     <div class="box-content">
         <h1>Меню</h1>
-<!--	    --><?php //putRevSlider( 'MobileMenu' ); ?>
-
 	    <?php
 
 	    $args = array(
@@ -106,7 +106,8 @@
         <h1>Chef</h1>
         <div class="entry-content">
             <p>Сердце нашего ресторана – это его кухня – место, где лучшие ингредиенты золотыми руками шеф-повара превращаются в изысканные блюда.</p>
-            <p>Кухней в REEF sea.food.community руководит молодой и талантливый Alexander Yourz. Cвою профессиональную карьеру начал в 19 лет.</p>
+            <p>Кухней в REEF sea.food.community руководит молодой и талантливый Alexander Yourz.</p>
+            <p>Меню REEF sea.food.community Alexander разрабатывал совместно с мишленовским бренд-шефом Nicola Batavia. В нем вы встретите идеальные сочетания из разных видов рыбы и морепродуктов и откроете для себя ни с чем не сравнимые гастрономические комбинации.</p>
         </div>
         <figure>
             <img src="<?php echo $templateurl ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
@@ -157,8 +158,6 @@
 </section>
 <section id="contacts" class="box box-5">
 
-
-
     <div class="contacts-tile contacts-opened">
         <!--<div id="contacts-toggle" class="icon-cancel contacts-toggle trigger">close</div>-->
         <div class="brand-text">
@@ -190,6 +189,14 @@
             <p>Киев ул. Шота Руставели, 16А<br />
                 тел. 044 228 18 17<br />
                 hostess@reefkiev.com
+            </p>
+            <div class="clearfix">
+                <div class="reserve footer-reserve trigger"><span>RESERVE</span></div>
+                <ul class="soc-icons">
+                    <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -208,6 +215,10 @@
 						тел. 044 228 18 17<br />
 						hostess@reefkiev.com
 					</p>
+                    <ul class="soc-icons">
+                        <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>
+                    </ul>
 					<ul class="fenti">
 						<li>
 							<figure>

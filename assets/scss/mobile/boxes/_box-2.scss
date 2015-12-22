@@ -7,7 +7,7 @@
 
   .menu-tile{
     background-color: white;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
     margin-bottom: 30px;
 
     display:none;
@@ -159,5 +159,11 @@
     padding: 10px;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media(max-width: 460px){
+  .box-content{
+    padding-top: 30px;
   }
 }

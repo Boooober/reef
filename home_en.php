@@ -227,9 +227,11 @@ get_header(); ?>
 
                         <div class="col">
                             <figure class="col-img"><img src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>"/></figure>
-                            <h2><?php the_title(); ?></h2>
-                            <?php get_my_excerpt(30, $post_id, true); ?>
-                            <a href="<?php  ?>" class="more-news trigger" data-post="<?php echo $post_id ?>"><span>More</span></a>
+                            <div class="col-content">
+                                <h2><?php the_title(); ?></h2>
+                                <?php get_my_excerpt(30, $post_id, true); ?>
+                                <a href="<?php  ?>" class="more-news trigger" data-post="<?php echo $post_id ?>"><span>More</span></a>
+                            </div>
                         </div>
 
 
@@ -310,6 +312,10 @@ get_header(); ?>
                         Phone 044 228 18 17<br />
                         hostess@reefkiev.com
                     </p>
+                    <ul class="soc-icons">
+                        <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>
+                    </ul>
                     <ul class="fenti">
                         <li>
                             <figure>
@@ -357,12 +363,6 @@ get_header(); ?>
                     <?php echo $news_content['the_content']; ?>
 
                     <footer class="clearfix">
-<!--                        <div class="add-info">-->
-<!--                            <ul>-->
-<!--                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=--><?php //echo $news_content['post_link']; ?><!--" target="_blank">Share on Facebook</a></li>-->
-<!--                                <li><a href="http://vk.com/share.php?url=--><?php //echo $news_content['post_link']; ?><!--" target="_blank">Поделиться ВКонтакте</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
                         <div class="date"><?php echo $news_content['post_date'] ?></div>
                     </footer>
                 </section>

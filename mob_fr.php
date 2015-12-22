@@ -6,21 +6,25 @@
     <div class="topline">
         <div class="topline-wrapper clearfix">
             <?php
-                wp_nav_menu( array(
-                    'container'      => '',
-                    'menu_class'     => 'lang-menu',
-                    'menu_id'        => 'lang-menu',
-                    'theme_location' => 'langs',
-                ) );
+            wp_nav_menu( array(
+                'container'      => '',
+                'menu_class'     => 'lang-menu',
+                'menu_id'        => 'lang-menu',
+                'theme_location' => 'langs',
+            ) );
             ?>
-            <div id="reserve" class="menu-btn"></div>
+            <div class="menu-btn reserve">
+                <svg height="100%" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+                </svg>
+            </div>
 
 	        <?php get_template_part('parts/logo'); ?>
 
         </div>
 
         <figure class="topline-video">
-            <?php putRevSlider( 'InteriorSlider' ); ?>
+            <?php putRevSlider( 'MobileSlider' ); ?>
         </figure>
 
     </div>
@@ -66,8 +70,6 @@
 <section id="menu" class="box box-2">
     <div class="box-content">
         <h1>Menu</h1>
-<!--	    --><?php //putRevSlider( 'MobileMenu' ); ?>
-
 	    <?php
 
 	    $args = array(
@@ -103,8 +105,9 @@
     <div class="box-content">
         <h1>Chef</h1>
         <div class="entry-content">
-	        <p>The heart of our restaurant is its kitchen; it is the place where the best ingredients are turning into the dainty dishes under the chief's gold hands.</p>
-	        <p>The young and talented Alexander Yourz directs the REEF sea.food.community's kitchen. He started his professional career at the age of 19 and he reckons that the main things for chief are talent, skill, experience and inspiration.</p>
+            <p>The heart of our restaurant is its kitchen; it is the place where the best ingredients are turning into the dainty dishes under the chief's gold hands.</p>
+            <p>The young and talented Alexander Yourz directs the REEF sea.food.community's kitchen.</p>
+            <p>The REEF sea.food.community's menu is elaborated by Alexander in cooperation with the Michelin's corporate chef Nicola Batavia. In which you will find the ideal combinations of the different fish species and seafood and you will open incomparable gastronomic combinations.</p>
         </div>
         <figure>
             <img src="<?php echo $templateurl ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
@@ -153,9 +156,8 @@
 
     </div>
 </section>
-
-
 <section id="contacts" class="box box-5">
+
     <div class="contacts-tile contacts-opened">
         <!--<div id="contacts-toggle" class="icon-cancel contacts-toggle trigger">close</div>-->
         <div class="brand-text">
@@ -188,6 +190,13 @@
 		        Phone 044 228 18 17<br />
 		        hostess@reefkiev.com
 	        </p>
+            <div class="clearfix">
+                <div class="reserve footer-reserve trigger"><span>RESERVE</span></div>
+                <ul class="soc-icons">
+                    <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -206,6 +215,10 @@
 						Phone 044 228 18 17<br />
 						hostess@reefkiev.com
 					</p>
+                    <ul class="soc-icons">
+                        <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>
+                    </ul>
 					<ul class="fenti">
 						<li>
 							<figure>

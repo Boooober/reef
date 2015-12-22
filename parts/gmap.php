@@ -15,11 +15,7 @@
 
             // The latitude and longitude to center the map (always required)
 
-            <?php if(reef_mobile_detect()){ ?>
-                center: new google.maps.LatLng(50.438959, 30.519448), //align map to reef coordinates
-           <?php } else{ ?>
-                center: new google.maps.LatLng(50.44371163, 30.51083843),
-           <?php } ?>
+            center: new google.maps.LatLng(50.438959, 30.519448), //align map to reef coordinates
 
 
 

@@ -17,24 +17,23 @@
     text-transform: uppercase;
     margin: 0 0 70px;
   }
+}
 
-  @media (max-width: 1100px){
-    .box-content,
-    .box-content--thin{
-      padding: 60px 30px;
-    }
-  }
-
-  @media (max-width: 768px){
-    .box h1 {
-      margin-bottom: 40px;
-    }
-    .box .box-content, .box .box-content--thin{
-      margin-top: 50px;
-    }
+@media (max-width: 1100px){
+  .box-content,
+  .box-content--thin{
+    padding: 60px 30px;
   }
 }
 
+@media (max-width: 768px){
+  .box h1 {
+    margin-bottom: 40px;
+  }
+  .box .box-content, .box .box-content--thin{
+    margin-top: 50px;
+  }
+}
 
 
 @import 'boxes/box-1';

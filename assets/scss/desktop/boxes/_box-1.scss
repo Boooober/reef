@@ -29,6 +29,27 @@
       width:100%;
     }
   }
+
+  @media (max-width: 768px){
+    .left, .right {
+      width: 100%
+    }
+    .right{
+      margin-left: 0;
+      .dotted-left-border{
+        padding-left: 0;
+        &:before{
+          content: none;
+        }
+      }
+    }
+    .col-content {
+      margin-left: 0;
+    }
+  }
+
 }
+
+
 
 

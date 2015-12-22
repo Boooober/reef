@@ -18,6 +18,30 @@
 //    width: 100%;
 //    padding-left: 0;
 //  }
+
+  .footer-reserve{
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 18px;
+    position: relative;
+    padding: 7px 0 5px;
+    &:before, &:after {
+      position: absolute;
+      top: 0;
+      left: 15%;
+      width: 70%;
+      height: 100%;
+      content: '';
+      display: block;
+      border-top: 2px solid #ebebeb;
+      border-bottom: 2px solid #ebebeb;
+    }
+  }
+
+  .soc-icons{
+    float: right;
+  }
+
 }
 
 .contacts-info{
@@ -27,6 +51,8 @@
     line-height: 22px;
   }
 }
+
+
 
 //.contacts-toggle{
 //  top: 30px;

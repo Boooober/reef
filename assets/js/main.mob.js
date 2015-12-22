@@ -1,26 +1,26 @@
 jQuery(document).ready(function($){
 
 
-    (function(){
-
-        var langMenu = $('#lang-menu');
-
-        $('#lang-menu .current-lang').click(function(){
-            event.stopPropagation();
-            event.preventDefault();
-            langMenu.toggleClass('open');
-        });
-
-        $('body').click(function(){
-            resetClasses();
-        });
-
-        function resetClasses(){
-            if(langMenu.hasClass('open')){
-                langMenu.removeClass('open');
-            }
-        }
-    })();
+//    (function(){
+//
+//        var langMenu = $('#lang-menu');
+//
+//        $('#lang-menu .current-lang').click(function(){
+//            event.stopPropagation();
+//            event.preventDefault();
+//            langMenu.toggleClass('open');
+//        });
+//
+//        $('body').click(function(){
+//            resetClasses();
+//        });
+//
+//        function resetClasses(){
+//            if(langMenu.hasClass('open')){
+//                langMenu.removeClass('open');
+//            }
+//        }
+//    })();
 
     //scroll to events
     (function(){
@@ -109,7 +109,7 @@ jQuery(document).ready(function($){
 
 
             //open
-            $('#reserve').click(function(){
+            $('.reserve').click(function(){
                 openPopup(pop);
             });
 
@@ -275,49 +275,13 @@ jQuery(document).ready(function($){
     (function(){
 
         $('.load-more').click(function(){
-            var btn = $(this),
-                lang = btn.data('lang');
-
-            // check if this is a first click and set class
-            if( !btn.hasClass('hidden') && !btn.hasClass('open') ) btn.addClass('hidden');
-
-            //change class
-            btn.toggleClass('open hidden');
+            var btn = $(this);
 
             //slide hidden content
             btn.siblings().each(function(){
-                var elem = $(this);
-                if( elem.hasClass('show-more-target') ) elem.slideToggle();
-                if (elem.hasClass('show-more-hide') ) elem.toggle();
-
+                $(this).slideDown();
             });
-
-
-            // change buttom text
-            if (btn.hasClass('open')){
-                btn.html(translations(lang, 0));
-            } else {
-                btn.html(translations(lang, 1));
-            }
-
-            function translations (lang, index){
-                var obj = {
-                    ru:{
-                        0:'спрятать',
-                        1:'подробнее'
-                    },
-                    en:{
-                        0:'hide',
-                        1:'more'
-                    },
-                    fr:{
-                        0:'hide',
-                        1:'more'
-                    }
-                };
-
-                return obj[lang][index];
-            }
+            btn.remove();
         });
 
         function loadMenu(){

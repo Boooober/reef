@@ -1,3 +1,4 @@
+<h3>Reserve</h3>
 <form id="reserve-form" action="">
 	<div class="input-row">
 		<input class="form-input" name="fcount" type="text" placeholder="<?php echo mb_strtoupper(pll__('Number of persons')); ?>"/>

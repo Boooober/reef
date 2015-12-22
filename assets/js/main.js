@@ -1,14 +1,4 @@
 (function($){
-    $(window).on('load', function () {
-
-        /** Preloader */
-        var $preloader = $('#preloader'),
-            $animation   = $preloader.find('.loader-cell');
-        $animation.delay(2000).fadeOut('slow');
-        $preloader.delay(1000).fadeOut('slow');
-    });
-
-
    $(document).ready(function(){
 
 
@@ -40,6 +30,35 @@
            }
        })();
 
+       function removePreloader(){
+           /** Preloader */
+           var $preloader = $('#preloader'),
+               $animation   = $preloader.find('.loader-cell');
+           $animation.fadeOut('slow');
+           $preloader.delay(200).fadeOut('slow');
+       }
+
+       //check event support
+       var isEventSupported = (function(){
+           var TAGNAMES = {
+               'select':'input','change':'input',
+               'submit':'form','reset':'form',
+               'error':'img','load':'img','abort':'img'
+           }
+           function isEventSupported(eventName) {
+               var el = document.createElement(TAGNAMES[eventName] || 'div');
+               eventName = 'on' + eventName;
+               var isSupported = (eventName in el);
+               if (!isSupported) {
+                   el.setAttribute(eventName, 'return;');
+                   isSupported = typeof el[eventName] == 'function';
+               }
+               el = null;
+               return isSupported;
+           }
+           return isEventSupported;
+       })();
+
 
         // video and music manipulations
         (function(){
@@ -47,6 +66,7 @@
                 toplineHeight = $('.topline-wrapper').outerHeight(),
                 body = $('body'),
                 videoWrapper = $('.video-wrapper'),
+                theVideo,
                 paused,
                 isActive = true,
 
@@ -94,7 +114,22 @@
                 "autoplay": true,
                 "loop": true
             });
-            $('#video_background').attr('muted', 'muted');
+            theVideo = $('#video_background');
+            theVideo.attr('muted', 'muted');
+
+            if(isEventSupported('canplay')){
+                theVideo.bind('canplay',function() {
+                    console.log("Can Play");
+                    removePreloader();
+                });
+            } else{
+                $(window).load(function(){
+                    removePreloader();
+                });
+            }
+
+
+
 
             //pause video on scroll
             $(window).scroll(function(){
@@ -155,20 +190,20 @@
 
 
 
-        //set window height to sections;
-        (function(){
-            var windowHeight = $(window).height();
-
-            setHeight();
-            $(window).resize(function() {
-                setHeight();
-            });
-
-            function setHeight(){
-                $('#map').css('height', windowHeight);
-            }
-
-        })();
+//        //set window height to sections;
+//        (function(){
+//            var windowHeight = $(window).height();
+//
+//            setHeight();
+//            $(window).resize(function() {
+//                setHeight();
+//            });
+//
+//            function setHeight(){
+//                $('#map').css('height', windowHeight);
+//            }
+//
+//        })();
 
 
         //scroll to section

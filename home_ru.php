@@ -221,9 +221,11 @@ get_header(); ?>
 
                         <div class="col">
                             <figure class="col-img"><img src="<?php echo $img_url; ?>" alt="<?php echo $img_alt; ?>"/></figure>
-                            <h2><?php the_title(); ?></h2>
-                            <?php get_my_excerpt(30, $post_id, true); ?>
-                            <a href="<?php  ?>" class="more-news trigger" data-post="<?php echo $post_id ?>"><span>Подробнее</span></a>
+                            <div class="col-content">
+                                <h2><?php the_title(); ?></h2>
+                                <?php get_my_excerpt(30, $post_id, true); ?>
+                                <a href="<?php  ?>" class="more-news trigger" data-post="<?php echo $post_id ?>"><span>Подробнее</span></a>
+                            </div>
                         </div>
 
 
@@ -307,6 +309,10 @@ get_header(); ?>
                         тел. 044 228 18 17<br />
                         hostess@reefkiev.com
                     </p>
+                    <ul class="soc-icons">
+                        <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>
+                    </ul>
                     <ul class="fenti">
                         <li>
                             <figure>

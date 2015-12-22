@@ -1537,9 +1537,7 @@ a, a:active {
 
 @media (max-width: 768px) {
   .menu-wrapper {
-    display: none; }
-  .box-1 .left, .box-1 .right {
-    width: 100%; } }
+    display: none; } }
 
 .box .box-content {
   padding: 80px 60px; }
@@ -1558,14 +1556,14 @@ a, a:active {
   margin: 0 0 70px; }
 
 @media (max-width: 1100px) {
-  .box .box-content,
-  .box .box-content--thin {
+  .box-content,
+  .box-content--thin {
     padding: 60px 30px; } }
 
 @media (max-width: 768px) {
-  .box .box h1 {
+  .box h1 {
     margin-bottom: 40px; }
-  .box .box .box-content, .box .box .box-content--thin {
+  .box .box-content, .box .box-content--thin {
     margin-top: 50px; } }
 
 .box-1 h1 {
@@ -1592,6 +1590,18 @@ a, a:active {
 @media (max-width: 940px) {
   .box-1 .right .col {
     width: 100%; } }
+
+@media (max-width: 768px) {
+  .box-1 .left, .box-1 .right {
+    width: 100%; }
+  .box-1 .right {
+    margin-left: 0; }
+    .box-1 .right .dotted-left-border {
+      padding-left: 0; }
+      .box-1 .right .dotted-left-border:before {
+        content: none; }
+  .box-1 .col-content {
+    margin-left: 0; } }
 
 .box-2 {
   background-image: url("../images/corr.jpg"); }
@@ -1722,10 +1732,6 @@ a, a:active {
   .box-3 .text-wrapper .line-col {
     width: 100%; } }
 
-.box-4 .col {
-  width: 33.33%;
-  text-align: center; }
-
 .box-4 .row {
   display: table;
   width: 100%;
@@ -1743,6 +1749,9 @@ a, a:active {
   width: 200px;
   height: 200px;
   margin: 0 auto; }
+
+.box-4 .col-content {
+  text-align: center; }
 
 .box-4 h2 {
   font-size: 28px;
@@ -1769,6 +1778,37 @@ a, a:active {
     margin-bottom: 4px; }
   .box-4 .more-news:after {
     margin-top: 4px; }
+
+@media (max-width: 768px) {
+  .box-4 h2 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px; } }
+
+@media (max-width: 720px) {
+  .box-4 .row {
+    display: block; }
+    .box-4 .row .col {
+      display: block;
+      width: 100%; }
+  .box-4 .col-img {
+    float: left; }
+  .box-4 .col-content {
+    margin-left: 220px;
+    text-align: left; }
+  .box-4 .more-news {
+    position: static;
+    display: inline-block;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); } }
+
+@media (max-width: 520px) {
+  .box-4 .col-img {
+    float: none; }
+  .box-4 .col-content {
+    margin-left: 0;
+    text-align: center; } }
 
 .box-6 {
   position: relative; }
@@ -1837,7 +1877,8 @@ a, a:active {
     margin: 0 10px;
     line-height: 12px;
     color: rgba(255, 255, 255, 0.7);
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: .7;
     cursor: pointer; }
     .interior .slider-caption .slide-title:hover, .interior .slider-caption .slide-title.active-slider {
       background: rgba(255, 255, 255, 0.2); }
@@ -1945,23 +1986,23 @@ body.open .video-previewer-wrapper iframe {
       -webkit-animation: equalize 1.25s infinite;
               animation: equalize 1.25s infinite; }
       .music-play .equalizer-container span:nth-child(1) {
-        -webkit-animation-delay: 0.06s;
-                animation-delay: 0.06s; }
+        -webkit-animation-delay: 0.69s;
+                animation-delay: 0.69s; }
       .music-play .equalizer-container span:nth-child(2) {
-        -webkit-animation-delay: 0.91s;
-                animation-delay: 0.91s; }
+        -webkit-animation-delay: 0.29s;
+                animation-delay: 0.29s; }
       .music-play .equalizer-container span:nth-child(3) {
-        -webkit-animation-delay: 0.97s;
-                animation-delay: 0.97s; }
+        -webkit-animation-delay: 0.92s;
+                animation-delay: 0.92s; }
       .music-play .equalizer-container span:nth-child(4) {
-        -webkit-animation-delay: 0.71s;
-                animation-delay: 0.71s; }
+        -webkit-animation-delay: 0.48s;
+                animation-delay: 0.48s; }
       .music-play .equalizer-container span:nth-child(5) {
-        -webkit-animation-delay: 0.76s;
-                animation-delay: 0.76s; }
+        -webkit-animation-delay: 0.63s;
+                animation-delay: 0.63s; }
       .music-play .equalizer-container span:nth-child(6) {
-        -webkit-animation-delay: 0.1s;
-                animation-delay: 0.1s; }
+        -webkit-animation-delay: 0.31s;
+                animation-delay: 0.31s; }
     .equalizer-container span:last-child {
       margin-right: 0; }
     .music-pause .equalizer-container span {
