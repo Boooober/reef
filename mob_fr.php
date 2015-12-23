@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php $templateurl = get_bloginfo('template_url'); ?>
-
 <header>
     <div class="topline">
         <div class="topline-wrapper clearfix">
@@ -110,7 +108,7 @@
             <p>The REEF sea.food.community's menu is elaborated by Alexander in cooperation with the Michelin's corporate chef Nicola Batavia. In which you will find the ideal combinations of the different fish species and seafood and you will open incomparable gastronomic combinations.</p>
         </div>
         <figure>
-            <img src="<?php echo $templateurl ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
+            <img src="<?php echo REEF_THEME_URL; ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
         </figure>
     </div>
 </section>
@@ -191,7 +189,7 @@
 		        hostess@reefkiev.com
 	        </p>
             <div class="clearfix">
-                <div class="reserve footer-reserve trigger"><span>RESERVE</span></div>
+                <div class="reserve reserve-btn trigger"><?php get_template_part('assets/svg/reserve.svg'); ?></div>
                 <ul class="soc-icons">
                     <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>

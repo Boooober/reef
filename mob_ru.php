@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php $templateurl = get_bloginfo('template_url'); ?>
-
 <header>
     <div class="topline fixed-header">
         <div class="topline-wrapper nav-down clearfix">
@@ -110,7 +108,7 @@
             <p>Меню REEF sea.food.community Alexander разрабатывал совместно с мишленовским бренд-шефом Nicola Batavia. В нем вы встретите идеальные сочетания из разных видов рыбы и морепродуктов и откроете для себя ни с чем не сравнимые гастрономические комбинации.</p>
         </div>
         <figure>
-            <img src="<?php echo $templateurl ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
+            <img src="<?php echo REEF_THEME_URL; ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
         </figure>
     </div>
 </section>
@@ -191,7 +189,7 @@
                 hostess@reefkiev.com
             </p>
             <div class="clearfix">
-                <div class="reserve footer-reserve trigger"><span>RESERVE</span></div>
+                <div class="reserve reserve-btn trigger"><?php get_template_part('assets/svg/reserve.svg'); ?></div>
                 <ul class="soc-icons">
                     <li><a href="https://www.facebook.com/reef.sea.food.community/"><i class="icon-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/reef_sea_food_community/"><i class="icon-instagram"></i></a></li>
@@ -252,6 +250,3 @@
 </div>
 
 <?php get_footer(); ?>
-
-</body>
-</html>

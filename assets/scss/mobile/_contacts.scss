@@ -10,36 +10,9 @@
   h1{
     margin: 0;
   }
-//  svg{
-//    width: 55px;
-//  }
 
-//  .fenti {
-//    width: 100%;
-//    padding-left: 0;
-//  }
-
-  .footer-reserve{
-    display: inline-block;
-    vertical-align: baseline;
-    font-size: 18px;
-    position: relative;
-    padding: 7px 0 5px;
-    &:before, &:after {
-      position: absolute;
-      top: 0;
-      left: 15%;
-      width: 70%;
-      height: 100%;
-      content: '';
-      display: block;
-      border-top: 2px solid #ebebeb;
-      border-bottom: 2px solid #ebebeb;
-    }
-    span{
-      position: relative;
-      top: 2px;
-    }
+  .reserve-btn{
+    float: left;
   }
 
   .soc-icons{

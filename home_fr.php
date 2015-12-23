@@ -3,7 +3,6 @@
  * Template Name: Home Page FR
  */
 
-$templateurl = get_bloginfo('template_url');
 get_header(); ?>
 
 
@@ -39,7 +38,7 @@ get_header(); ?>
 			                    'theme_location' => 'langs',
 		                    ) );
 	                    ?>
-                        <div id="reserve" class="menu menu-btn trigger"><span>RESERVE</span></div>
+                        <div id="reserve" class="menu menu-btn trigger"><?php get_template_part('assets/svg/reserve.svg'); ?></div>
 
                         <div class="soc-bar menu">
                             <ul class="soc-icons">
@@ -135,7 +134,7 @@ get_header(); ?>
             <h1>Chef</h1>
             <div class="line-row full-wrapper row">
                 <div class="line-col image-col">
-                    <img src="<?php echo $templateurl ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
+                    <img src="<?php echo REEF_THEME_URL; ?>/assets/images/chief_reef.jpg" alt=""/><!--Chief photo-->
                 </div>
 
                 <div class="line-col text-wrapper">
@@ -391,7 +390,7 @@ get_header(); ?>
     </div>
 
     <audio id="music" autoplay="autoplay">
-        <source src="<?php echo $templateurl ?>/assets/audio/Serge_Proshe_-_One_Time_5_Reasons_Remix_radio_edit.wav" type="audio/wav">
+        <source src="<?php echo REEF_THEME_URL; ?>/assets/audio/Serge_Proshe_-_One_Time_5_Reasons_Remix_radio_edit.wav" type="audio/wav">
     </audio>
 <?php } ?>
 
