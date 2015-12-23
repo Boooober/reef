@@ -1234,6 +1234,12 @@ a, a:active {
 
 .reserve-popup .form {
   background: #f2f3f4; }
+  .reserve-popup .form h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #646464; }
   .reserve-popup .form .form-input {
     border: none;
     width: 100%;
@@ -1602,6 +1608,9 @@ a, a:active {
       display: block;
       border-top: 2px solid #ebebeb;
       border-bottom: 2px solid #ebebeb; }
+    .contacts-tile .footer-reserve span {
+      position: relative;
+      top: 2px; }
   .contacts-tile .soc-icons {
     float: right; }
 

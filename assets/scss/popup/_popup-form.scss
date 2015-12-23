@@ -84,6 +84,13 @@
   }
   .form{
     background: #f2f3f4;
+    h3{
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 20px;
+      color: #646464;
+    }
     .form-input{
       border: none;
       width: 100%;
