@@ -1299,10 +1299,10 @@ a, a:active {
 
 .topline .logo {
   float: left;
-  width: 185px;
   display: block; }
   .topline .logo svg {
-    display: block; }
+    display: block;
+    height: 52px; }
 
 .topline .nav-bar {
   float: right;
@@ -1337,8 +1337,8 @@ a, a:active {
     -webkit-animation: slidedown 0.5s forwards;
             animation: slidedown 0.5s forwards;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); }
-  .topline.fixed-header .logo {
-    width: 120px; }
+  .topline.fixed-header .logo svg {
+    height: 35px; }
   .topline.fixed-header .menu-wrapper {
     margin-top: 6px; }
   .topline.fixed-header .nav-menu li {
@@ -1353,42 +1353,18 @@ a, a:active {
     display: block;
     height: 100%; }
 
-.lang-menu {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  overflow: hidden; }
-  .lang-menu li {
-    position: relative;
-    z-index: 10;
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: #9d9fa0;
-    background: white;
-    padding: 5px 0;
-    -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%); }
-    .lang-menu li:hover {
-      background: #DDD; }
-    .lang-menu li a {
-      width: 100%;
-      height: 100%;
-      font-size: 18px;
-      display: block; }
-  .lang-menu .current-lang {
-    top: 0;
-    left: 0;
-    margin-top: 0;
-    position: absolute;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0); }
-    .lang-menu .current-lang:hover {
-      background: inherit; }
-  .lang-menu.open {
-    overflow: visible; }
+.lang-menu li {
+  display: inline-block;
+  margin: 0 3px;
+  color: #9d9fa0;
+  background: white;
+  padding: 2px 5px 3px; }
+  .lang-menu li a {
+    font-size: 18px;
+    display: block; }
+
+.lang-menu .current-lang {
+  display: none !important; }
 
 .nav-menu {
   font-size: 0; }
@@ -1513,8 +1489,8 @@ a, a:active {
     height: 22px; }
   .lang-menu li a {
     font-size: 14px; }
-  .topline .logo {
-    width: 160px; }
+  .topline .logo svg {
+    height: 45px; }
   .menu {
     margin: 0 8px; } }
 
@@ -1529,8 +1505,8 @@ a, a:active {
     line-height: 16px; }
   .topline .menu-wrapper {
     margin-top: 12px; }
-  .topline .logo {
-    width: 140px; } }
+  .topline .logo svg {
+    height: 40px; } }
 
 @media (max-width: 768px) {
   .menu-wrapper {
@@ -1983,23 +1959,23 @@ body.open .video-previewer-wrapper iframe {
       -webkit-animation: equalize 1.25s infinite;
               animation: equalize 1.25s infinite; }
       .music-play .equalizer-container span:nth-child(1) {
-        -webkit-animation-delay: 0.79s;
-                animation-delay: 0.79s; }
+        -webkit-animation-delay: 0.98s;
+                animation-delay: 0.98s; }
       .music-play .equalizer-container span:nth-child(2) {
-        -webkit-animation-delay: 0.81s;
-                animation-delay: 0.81s; }
+        -webkit-animation-delay: 0.45s;
+                animation-delay: 0.45s; }
       .music-play .equalizer-container span:nth-child(3) {
-        -webkit-animation-delay: 0.46s;
-                animation-delay: 0.46s; }
+        -webkit-animation-delay: 0.58s;
+                animation-delay: 0.58s; }
       .music-play .equalizer-container span:nth-child(4) {
-        -webkit-animation-delay: 0.88s;
-                animation-delay: 0.88s; }
+        -webkit-animation-delay: 0.08s;
+                animation-delay: 0.08s; }
       .music-play .equalizer-container span:nth-child(5) {
-        -webkit-animation-delay: 0.88s;
-                animation-delay: 0.88s; }
+        -webkit-animation-delay: 0.59s;
+                animation-delay: 0.59s; }
       .music-play .equalizer-container span:nth-child(6) {
-        -webkit-animation-delay: 0.81s;
-                animation-delay: 0.81s; }
+        -webkit-animation-delay: 0.56s;
+                animation-delay: 0.56s; }
     .equalizer-container span:last-child {
       margin-right: 0; }
     .music-pause .equalizer-container span {
