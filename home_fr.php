@@ -124,7 +124,7 @@ get_header(); ?>
 
     <section id="menu" class="box box-2 full-background">
         <div class="box-content slider-wrapper">
-            <h1>Меню</h1>
+            <h1>Menu</h1>
             <?php putRevSlider( 'MainSlider' ); ?>
         </div>
     </section>
