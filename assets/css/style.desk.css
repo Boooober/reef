@@ -1959,23 +1959,23 @@ body.open .video-previewer-wrapper iframe {
       -webkit-animation: equalize 1.25s infinite;
               animation: equalize 1.25s infinite; }
       .music-play .equalizer-container span:nth-child(1) {
-        -webkit-animation-delay: 0.98s;
-                animation-delay: 0.98s; }
+        -webkit-animation-delay: 0.42s;
+                animation-delay: 0.42s; }
       .music-play .equalizer-container span:nth-child(2) {
-        -webkit-animation-delay: 0.45s;
-                animation-delay: 0.45s; }
+        -webkit-animation-delay: 0.95s;
+                animation-delay: 0.95s; }
       .music-play .equalizer-container span:nth-child(3) {
-        -webkit-animation-delay: 0.58s;
-                animation-delay: 0.58s; }
+        -webkit-animation-delay: 0.32s;
+                animation-delay: 0.32s; }
       .music-play .equalizer-container span:nth-child(4) {
-        -webkit-animation-delay: 0.08s;
-                animation-delay: 0.08s; }
+        -webkit-animation-delay: 0.03s;
+                animation-delay: 0.03s; }
       .music-play .equalizer-container span:nth-child(5) {
-        -webkit-animation-delay: 0.59s;
-                animation-delay: 0.59s; }
+        -webkit-animation-delay: 0.21s;
+                animation-delay: 0.21s; }
       .music-play .equalizer-container span:nth-child(6) {
-        -webkit-animation-delay: 0.56s;
-                animation-delay: 0.56s; }
+        -webkit-animation-delay: 0.54s;
+                animation-delay: 0.54s; }
     .equalizer-container span:last-child {
       margin-right: 0; }
     .music-pause .equalizer-container span {
@@ -2183,6 +2183,13 @@ body.open .video-previewer-wrapper iframe {
   height: 2px;
   margin: 0 15px;
   background-color: #e0e0e0; }
+
+.ReefSl-content h3 {
+  font-size: 12px;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 10px 0 0;
+  font-weight: 700; }
 
 .ReefSl-content table {
   width: 100%;

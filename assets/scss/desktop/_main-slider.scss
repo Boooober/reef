@@ -18,6 +18,15 @@
 
 
 
+.ReefSl-content h3 {
+  font-size: 12px;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin: 10px 0 0;
+  font-weight: 700;
+}
+
+
 .ReefSl-content table {
   width:100%;
   margin-bottom: 10px;
@@ -90,7 +99,7 @@
   opacity: 0.5 !important;
   border: 1px solid transparent;
   transition: .4s;
-//  white-space: nowrap;
+  //  white-space: nowrap;
 }
 .tp-tab:hover{
   opacity: 1 !important;
@@ -140,7 +149,7 @@
   font-size:0;
   margin: 35px auto 0;
   width: 180px;
-  }
+}
 
 .table-fenti li{
   width:25%;
