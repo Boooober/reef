@@ -13,7 +13,7 @@
 
            var langMenu = $('#lang-menu');
 
-           $('#lang-menu .current-lang').click(function(){
+           $('#lang-menu .current-lang').click(function(event){
                event.stopPropagation();
                event.preventDefault();
                langMenu.toggleClass('open');
@@ -218,7 +218,7 @@
                     hash = link.substring(0,1);
 
                 if (hash === '#'){
-                    $(this).click(function(){
+                    $(this).click(function(event){
                         event.preventDefault();
                         goToByScroll(link);
                     });
@@ -273,7 +273,7 @@
 
 
                 //form submit
-                form.submit(function(){
+                form.submit(function(event){
                     event.preventDefault();
 
                     inputs.blur(checkClass);
@@ -383,7 +383,7 @@
 
             // news popup
             (function(){
-                $('.more-news').click(function(){
+                $('.more-news').click(function(event){
                     event.preventDefault();
 
                     var popUps = $('.news-popup'),
@@ -421,7 +421,7 @@
                 container.click(closeChecker);
                 close.click(closeChecker);
 
-                function closeChecker (){
+                function closeChecker (event){
                     if (event.target == container.get(0) || event.target == close.get(0)){
                         closePopup(target);
                     }

@@ -7,7 +7,7 @@ $equalizers: 6;
 $equalizerSize: ($equalizers * $width) + ( ($equalizers - 1) * $margin );
 
 // Heights
-$one: 3;
+$one: $max / 3;
 $two: $max / 2;
 $three: $max / 4.666666667;
 $four: $max / 3.5;
